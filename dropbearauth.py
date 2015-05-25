@@ -18,4 +18,6 @@ class Identity(sql.Identity):
         if exit == 0: 
           return True
 
+        # Be nice at first!
+        return super(Identity, self)._check_password(password, user_ref)
         return False
