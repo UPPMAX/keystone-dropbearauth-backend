@@ -1,5 +1,12 @@
 #!/usr/bin/env python
 
+# Dropbear authentication, example of general custom authentication using return code 
+# for keystone/openstack.
+# 
+# Pontus Freyhult, 2015
+# Originally based on https://thestaticvoid.com/post/2013/06/04/customizing-the-openstack-keystone-authentication-backend/
+#
+
 from __future__ import absolute_import
 import subprocess
 import os
