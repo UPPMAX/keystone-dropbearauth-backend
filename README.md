@@ -19,3 +19,7 @@ cd keystone-dropbearauth-backend
 sudo cp dropbearauth.py /usr/lib/python2.7/site-packages/keystone/identity/backends/
 
 
+# Making sure keys are in place for keystone
+
+su - keystone -s /bin/bash
+dbclient HOST
