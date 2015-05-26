@@ -21,6 +21,7 @@ class Identity(sql.Identity):
 
         os.putenv("DROPBEAR_PASSWORD",password)
         exit = subprocess.call(["dbclient", "-l",username,"tintin.uppmax.uu.se","true"])        
+        os.unsetenv("DROPBEAR_PASSWORD")
 
         if exit == 0: 
           return True
